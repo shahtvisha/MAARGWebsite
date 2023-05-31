@@ -117,14 +117,14 @@
 								<!-- class="number" data-number="24781" -->
 							</p>
 						</div>
-						<form action="#" class="appointment">
+						<form action="/" method="post" class="appointment">
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
 										<label for="name">Full Name</label>
 										<div class="input-wrap">
 											<div class="icon"><span class="fa fa-user"></span></div>
-											<input type="text" class="form-control" placeholder="">
+											<input type="text" class="form-control" value="" placeholder="">
 										</div>
 									</div>
 								</div>
@@ -133,7 +133,7 @@
 										<label for="name">Email Address</label>
 										<div class="input-wrap">
 											<div class="icon"><span class="fa fa-paper-plane"></span></div>
-											<input type="email" class="form-control" placeholder="">
+											<input type="" class="form-control" value="" placeholder="">
 										</div>
 									</div>
 								</div>
@@ -142,7 +142,7 @@
 										<label for="name">Contact Details</label>
 										<div class="input-wrap">
 											<div class="icon"><span class="fa fa-paper-plane"></span></div>
-											<input type="email" class="form-control" placeholder="">
+											<input type="number" class="form-control" value="" placeholder="">
 										</div>
 									</div>
 								</div>
@@ -155,10 +155,10 @@
 												<div class="icon"><span class="fa fa-chevron-down"></span></div>
 												<select name="" id="" class="form-control">
 													<option value=""></option>
-													<option value="">Business Development</option>
-													<option value="">Technical Development</option>
-													<option value="">Research & Content</option>
-													<option value="">Social Media & Marketing</option>
+													<option value="Business Development">Business Development</option>
+													<option value="Technical Development">Technical Development</option>
+													<option value="Research & Content">Research & Content</option>
+													<option value="Social Media & Marketing">Social Media & Marketing</option>
 												</select>
 											</div>
 										</div>
@@ -172,10 +172,11 @@
 											<div class="select-wrap">
 												<div class="icon"><span class="fa fa-chevron-down"></span></div>
 												<select name="" id="" class="form-control">
-													<option value="">School (Grade 9-10)</option>
-													<option value="">Junior College</option>
-													<option value="">Undergraduate</option>
-													<option value="">Graduate</option>
+													<option value=""></option>
+													<option value="School (Grade 9-10)">School (Grade 9-10)</option>
+													<option value="Junior College">Junior College</option>
+													<option value="Undergraduate">Undergraduate</option>
+													<option value="Graduate">Graduate</option>
 												</select>
 											</div>
 										</div>
@@ -238,7 +239,7 @@
 
 								<div class="col-md-12">
 									<div class="form-group">
-										<input type="submit" value="Join Our Impact" class="btn btn-secondary py-3 px-4">
+										<input type="submit" value="Join Our Impact" onClick="popUp()" class="btn btn-secondary py-3 px-4">
 									</div>
 								</div>
 							</div>
@@ -248,7 +249,7 @@
 				<div class="col-md-7 wrap-about py-5">
 					<div class="heading-section pr-md-5 pt-md-5">
 						<!-- <span class="subheading">Welcome to unicare</span> -->
-						<h2 class="mb-4">A path to equal education and career oppurtunities </h2>
+						<h2 class="mb-4">A path to equal education and career opportunities </h2>
 						<p>Maarg is a not-for-profit organization facilitating language-inclusive career awareness programs for Indian underprivileged students (grades 9 to 12) through peers and professionals who volunteer to provide free mentorship and resources in order to encourage full time and part time higher education.</p>
 						<br />
 						<p>Under Maarg, students from underprivileged communities will have support to continue engagement in education, and industry. This will help them to alleviate themselves out of the poverty cycle that is stimulated by ignorance of opportunity in sectors of career and education. </p>
@@ -696,7 +697,7 @@
 			<div class="row">
 				<div class="col-md-6 col-lg-6">
 					<div class="volunteer">
-						<div class="img" style="background-image: url(images/WhatsApp\ Image\ 2023-05-29\ at\ 9.46.15\ PM.jpeg); height: 300px;"></div>
+						<div class="img" style="background-image: url(images/bb.JPEG); height: 450px;"></div>
 						<div class="text text-1">
 							<h3>Bhagyashree Birje</h3>
 							<span>Co-Founder</span>
@@ -785,7 +786,7 @@
 						<div class="col-md-12 heading-section text-center ftco-animate">
 							<h2>GET IN TOUCH</h2>
 						</div>
-						<div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a></div>
+						<div class="social"><a href="https://www.instagram.com/maargindia/"><i class="icon ion-social-instagram"></i></a><a href="https://www.linkedin.com/company/maargindia/"><i class="icon ion-social-linkedin"></i></a></div>
 						<div class="row mt-5">
 							<div class="col-md-12 text-center">
 			
@@ -806,8 +807,14 @@
 
 		<!-- loader -->
 		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
+		
+		<script>
+			function popUp() {
+				alert('Our volunteer form is not open yet, stay tuned for more updates');
+			}
+		</script>
+		
+		<script src="js/db.js"></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>
 		<script src="js/popper.min.js"></script>
@@ -825,5 +832,9 @@
 		<script src="js/google-map.js"></script>
 		<script src="js/main.js"></script>
 		
+	</body>
+	<body>
+		 
+
 	</body>
 	</html>
