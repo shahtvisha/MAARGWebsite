@@ -494,6 +494,29 @@ pre {
           display: none;
       }
   }
+
+  @media (max-width: 767px) { /* Hide video on screens smaller than 768px */
+    .model-container {
+        margin-left:20px;
+    }
+}
+
+@media (max-width: 767px) { /* Hide video on screens smaller than 768px */
+  .button-container {
+      display:none;
+  }
+}
+@media (max-width: 767px) { /* Hide video on screens smaller than 768px */
+  .content-container {
+      height: 780px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 2080px) { /* Hide video on screens smaller than 768px */
+  .join-us-container {
+      display: none;
+  }
+}
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
